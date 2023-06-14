@@ -20,6 +20,7 @@
             width:100vw;
             background-color:hsl(0, 0%, 94%);;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -113,11 +114,27 @@
             input{
                 font-size: 16px;
             }
-            .calc-body{
-            width:90%
-            }
             
         }
+      
+      .footer{
+        position: absolute;
+        bottom:5%;
+        font-size: 20px;
+      }
+
+      .header{
+        position: absolute;
+        top:5%;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+        font-size: 20px;
+      }
+      h2{
+        text-shadow: -1px 1px 2px hsl(259, 100%, 65%);
+      }
+      
+      
     
     </style>
 
@@ -125,6 +142,9 @@
 
 <body>
     <div class="container">
+        <div class="header">
+            <h2>AGE CALCULATOR</h2>
+        </div>
        <div class="calc-body">
           <div class="main">
             <div class="input-field">
@@ -153,11 +173,21 @@
             <h1 class="result-months"><span>--</span> <i>months</i></h1>
             <h1 class="result-days"><span>--</span> <i>days</i> </h1>
           </div>
-    
 
         </div>
+      
+      
+        <div class="footer">
+   
+            <h6>Frontend Mentor Challenge | Subham Rai</h6>
+         </div>
+
          <!-- input section ends here -->
     </div>
+    
+    
+    
+    
     <script>
 
         //selecting input field.
